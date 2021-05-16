@@ -5,10 +5,10 @@
  */
 package airhacks.service.ping.boundary;
 
-import jakarta.ejb.Asynchronous;
 import jakarta.ejb.Stateless;
 import java.security.Principal;
-import jakarta.inject.Inject;
+import javax.inject.Inject;
+import org.eclipse.microprofile.faulttolerance.Asynchronous;
 
 @Stateless
 public class AsyncService {

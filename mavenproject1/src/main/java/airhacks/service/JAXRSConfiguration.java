@@ -1,8 +1,8 @@
 package airhacks.service;
 
-import jakarta.security.enterprise.authentication.mechanism.http.BasicAuthenticationMechanismDefinition;
-import jakarta.ws.rs.ApplicationPath;
-import jakarta.ws.rs.core.Application;
+import javax.security.enterprise.authentication.mechanism.http.BasicAuthenticationMechanismDefinition;
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
 import org.glassfish.soteria.identitystores.annotation.Credentials;
 import org.glassfish.soteria.identitystores.annotation.EmbeddedIdentityStoreDefinition;
 
@@ -13,7 +13,7 @@ import org.glassfish.soteria.identitystores.annotation.EmbeddedIdentityStoreDefi
  * @author airhacks.com
  */
 @ApplicationPath("resources")
-@BasicAuthenticationMechanismDefinition(realmName = "jakarta")
+@BasicAuthenticationMechanismDefinition(realmName = "javax")
 @EmbeddedIdentityStoreDefinition(
         @Credentials(callerName = "duke", password = "best", groups = {"user"}))
 public class JAXRSConfiguration extends Application {

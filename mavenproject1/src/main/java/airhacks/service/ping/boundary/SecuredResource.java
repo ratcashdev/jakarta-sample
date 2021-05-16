@@ -1,11 +1,11 @@
 package airhacks.service.ping.boundary;
 
-import jakarta.annotation.security.DeclareRoles;
-import jakarta.annotation.security.RolesAllowed;
+import javax.annotation.security.DeclareRoles;
+import javax.annotation.security.RolesAllowed;
 import java.security.Principal;
-import jakarta.inject.Inject;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.Path;
+import javax.inject.Inject;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
 
 @Path("secure")
 @DeclareRoles({"user", "admin"})
